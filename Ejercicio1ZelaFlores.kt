@@ -1,7 +1,7 @@
 /*
     Este script calcula el nivel de rendimiento de un empleado en base a su puntuación,
     del 0 al 10 y su salario mensual, al final se muestra el nivel y el dinero adicional recibido.
-    Autor: Zela Flores Gabriel Frank
+    Autor: Zela Flores Gabriel Frank Krisna
     Fecha creación: 24/08/2025
     Última modificación: 24/08/2025
 */
@@ -36,3 +36,4 @@ fun main() {
     println("Nivel de rendimiento: $nivel")
     println("Cantidad de dinero recibido: $$dineroRecibido")
 }
+

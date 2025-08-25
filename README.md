@@ -78,3 +78,52 @@ Ejemplos de commits:
 * Todos los programas están escritos en **Kotlin puro**.
 * Se aplicaron principios de **modularidad, cohesión y validaciones**.
 * El proyecto cumple con los requisitos funcionales de la práctica y agrega robustez en el manejo de errores.
+
+
+# 📑 Rúbrica de evaluación – Práctica 1 Kotlin
+
+### 1. Estructura del proyecto (3 puntos)
+
+* [ ] **Excelente (3 pts):** El proyecto tiene una estructura clara y muy bien organizada. Los archivos están en carpetas adecuadas y los nombres son descriptivos y coherentes.
+* [ ] **Adecuado (2 pts):** La estructura es clara y organizada en su mayoría, aunque puede haber cierto desorden.
+* [ ] **Insuficiente (1 pt):** El proyecto carece de organización, los archivos están desordenados y sin coherencia.
+
+---
+
+### 2. Convenciones de Kotlin y buenas prácticas (5 puntos)
+
+* [ ] **Excelente (5 pts):** Se siguen estrictamente las convenciones de Kotlin, no hay repeticiones de código innecesarias y se aplican principios de diseño como encapsulamiento, modularidad y cohesión.
+* [ ] **Bueno (4 pts):** Se siguen convenciones de Kotlin y se evitan repeticiones de código en la mayoría de los casos.
+* [ ] **Regular (3 pts):** Se siguen las convenciones de Kotlin de forma aceptable, aunque con algunos errores.
+* [ ] **Malo (2 pts):** Convenciones aplicadas de forma inconsistente, con repeticiones innecesarias.
+* [ ] **Muy Malo (1 pt):** No se siguen las convenciones, falta total de coherencia.
+
+---
+
+### 3. Comentarios en el código (3 puntos)
+
+* [ ] **Excelente (3 pts):** El código está comentado adecuadamente, con explicaciones claras, decisiones de diseño y posibles mejoras.
+* [ ] **Adecuado (2 pts):** El código tiene comentarios en su mayoría, aunque incompletos en algunas partes.
+* [ ] **Insuficiente (1 pt):** Carece de comentarios o los existentes son poco claros y escasos.
+
+---
+
+### 4. Uso de Git y README.md (3 puntos)
+
+* [ ] **Excelente (3 pts):** Git se usa de manera efectiva, con commits frecuentes y descriptivos. README completo y con enlace al repositorio.
+* [ ] **Adecuado (2 pts):** Se usa Git con cierta frecuencia. README presente, aunque incompleto.
+* [ ] **Insuficiente (1 pt):** No se usa Git o no hay README adecuado.
+
+---
+
+### 5. Cumplimiento de requisitos funcionales (6 puntos)
+
+* [ ] **Excelente (6 pts):** El proyecto cumple con todos los requisitos, maneja errores y excepciones correctamente, incluye funcionalidad adicional y es altamente intuitivo.
+* [ ] **Bueno (5 pts):** Cumple los requisitos, es eficiente y tiene interfaz intuitiva.
+* [ ] **Aceptable (4 pts):** Cumple con los requisitos básicos y maneja errores de forma general.
+* [ ] **Mejorable (3 pts):** Cumple la mayoría de requisitos, pero con limitaciones.
+* [ ] **Deficiente (2 pts):** Cumplimiento parcial, interfaz poco intuitiva y manejo de errores deficiente.
+* [ ] **Muy Deficiente (1 pt):** No cumple con los requisitos funcionales, sin manejo de errores ni valor añadido.
+
+---
+

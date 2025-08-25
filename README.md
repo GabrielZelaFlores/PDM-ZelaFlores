@@ -1,8 +1,3 @@
-¡Listo crack! 🚀
-Aquí tienes el **README.md completo** para que lo copies directo:
-
----
-
 # Práctica 1 – Introducción a Kotlin
 
 Este repositorio contiene la **Práctica 1 del curso Programación para Dispositivos Móviles**, donde se resuelven 4 ejercicios en el lenguaje **Kotlin**, aplicando funciones, validaciones y buenas prácticas de programación.

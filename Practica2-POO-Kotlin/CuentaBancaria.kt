@@ -1,6 +1,6 @@
 /*
 Clase CuentaBancaria con saldo, límite de retiro y validación de datos.
-Autor: Zela Flores Gabriel Frank - Ingeniería de Software 6° semestre
+Autor: Zela Flores Gabriel Frank - Ingeniería de Software 6 semestre
 Fecha de creación: 01/09/2025
 Última modificación: 01/09/2025
 */

@@ -1,0 +1,129 @@
+/*
+Sistema de gestión de biblioteca con materiales, usuarios y operaciones de préstamo.
+Autor: Zela Flores Gabriel Frank - Ingeniería de Software 6° semestre
+Fecha de creación: 01/09/2025
+Última modificación: 01/09/2025
+*/
+
+// Clase abstracta que representa cualquier material de la biblioteca ,libros, revistas, etc
+abstract class Material(val titulo: String, val autor: String, val anioPublicacion: Int) {
+    abstract fun mostrarDetalles()  // Método que cada material debe implementar a su manera
+}
+
+class Libro(
+    titulo: String, autor: String, anio: Int,
+    val genero: String, val paginas: Int
+) : Material(titulo, autor, anio) {
+    override fun mostrarDetalles() {
+        println("📘 Libro: $titulo, Autor: $autor, Año: $anioPublicacion, Género: $genero, Páginas: $paginas")
+    }
+}
+
+class Revista(
+    titulo: String, autor: String, anio: Int,
+    val issn: String, val volumen: Int, val numero: Int, val editorial: String
+) : Material(titulo, autor, anio) {
+    override fun mostrarDetalles() {
+        println("📕 Revista: $titulo, Autor: $autor, Año: $anioPublicacion, ISSN: $issn, Volumen: $volumen, Número: $numero, Editorial: $editorial")
+    }
+}
+
+// Para usuarios porque automáticamente genera equals, hashCode y toString
+data class Usuario(val nombre: String, val apellido: String, val edad: Int)
+
+// Interfaz que define todas las operaciones que debe tener una biblioteca
+interface IBiblioteca {
+    fun registrarMaterial(material: Material)
+    fun registrarUsuario(usuario: Usuario)
+    fun prestar(usuario: Usuario, material: Material)
+    fun devolver(usuario: Usuario, material: Material)
+    fun mostrarMaterialesDisponibles()
+    fun mostrarMaterialesReservados(usuario: Usuario)
+}
+
+// biblioteca con todas las operaciones
+class Biblioteca : IBiblioteca {
+    private val materialesDisponibles = mutableListOf<Material>()  // Lista de materiales disponibles
+    private val prestamos = mutableMapOf<Usuario, MutableList<Material>>()  // Mapa de prEstamos por usuario
+
+    override fun registrarMaterial(material: Material) {
+        materialesDisponibles.add(material)
+    }
+
+    override fun registrarUsuario(usuario: Usuario) {
+        prestamos[usuario] = mutableListOf()  // lista vacía para los préstamos del usuario
+    }
+
+    // lo quita de disponibles y lo agrega a los préstamos del usuario
+    override fun prestar(usuario: Usuario, material: Material) {
+        if (materialesDisponibles.remove(material)) {
+            prestamos[usuario]?.add(material)
+            println("✅ Material prestado: ${material.titulo}")
+        } else println("⚠️ Material no disponible.")
+    }
+
+    override fun devolver(usuario: Usuario, material: Material) {
+        if (prestamos[usuario]?.remove(material) == true) {
+            materialesDisponibles.add(material)
+            println("✅ Material devuelto: ${material.titulo}")
+        } else {
+            println("⚠️ El usuario no tenía este material en préstamo.")
+        }
+    }
+
+    override fun mostrarMaterialesDisponibles() {
+        println("📚 Materiales disponibles:")
+    override fun mostrarMaterialesReservados(usuario: Usuario) {
+}
+
+// Función principal para probar el sistema de biblioteca
+fun main() {
+    val biblioteca = Biblioteca()
+
+    // 📘 Libros de autores arequipeños reales
+        1931,
+        "Novela social",
+        180
+    )
+
+    val libro2 = Libro(
+        "Historia",
+        250
+    )
+
+    val revista1 = Revista(
+        "Revista Arequipa Cultural",
+        "Varios autores",
+        2021,
+        "2718-4567",
+        15,
+        3,
+        "Editorial UNSA"
+    )
+
+    val usuario1 = Usuario("Ana", "Gómez", 25)
+
+    biblioteca.registrarMaterial(revista1)
+    biblioteca.registrarUsuario(usuario1)
+
+    biblioteca.mostrarMaterialesDisponibles()
+    biblioteca.prestar(usuario1, libro1)
+    biblioteca.mostrarMaterialesReservados(usuario1)
+    biblioteca.devolver(usuario1, libro1)
+    biblioteca.mostrarMaterialesDisponibles()
+}
+    // 👉 Estas líneas deben estar dentro del main
+    biblioteca.registrarMaterial(libro1)
+    biblioteca.registrarMaterial(libro2)
+        "Historia de Arequipa",
+        "Francisco Mostajo",
+        1924,
+    val libro1 = Libro(
+        "El tungsteno",
+        "César Vallejo",
+        println("📖 Materiales reservados por ${usuario.nombre}:")
+        prestamos[usuario]?.forEach { it.mostrarDetalles() }
+    }
+        if (materialesDisponibles.isEmpty()) println("No hay materiales disponibles.")
+        materialesDisponibles.forEach { it.mostrarDetalles() }
+    }

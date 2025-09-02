@@ -12,32 +12,32 @@ class CuentaBancaria(private var _saldo: Double, private var _limiteRetiro: Doub
         get() = _saldo  // Al obtener saldo devuelve el valor de saldo
         set(value) {
             // En validacion el saldo no puede ser negativo
-            if (value >= 0) _saldo = value else println("⚠️ El saldo no puede ser negativo")
+            if (value >= 0) _saldo = value else println("El saldo no puede ser negativo")
         }
 
     var limiteRetiro: Double
         get() = _limiteRetiro
         set(value) {
             // el límite debe ser mayor que 0
-            if (value > 0) _limiteRetiro = value else println("⚠️ El límite de retiro debe ser mayor que 0")
+            if (value > 0) _limiteRetiro = value else println("El límite de retiro debe ser mayor que 0")
         }
 
     // Metodo para realizar retiros de la cuenta
     fun retirar(monto: Double) {
         when {
             // Caso1 monto negativo o cero
-            monto <= 0 -> println("⚠️ El monto debe ser mayor que 0")
+            monto <= 0 -> println("El monto debe ser mayor que 0")
 
             // Caso2 monto excede el límite permitido
-            monto > _limiteRetiro -> println("⚠️ El monto excede el límite de retiro permitido")
+            monto > _limiteRetiro -> println("El monto excede el límite de retiro permitido")
 
             // Caso3 monto excede el saldo disponible
-            monto > _saldo -> println("⚠️ Fondos insuficientes")
+            monto > _saldo -> println("Fondos insuficientes")
 
             // Caso4 todas las validaciones pasan - retiro exitoso
             else -> {
                 _saldo -= monto  // Resta el monto del saldo
-                println("✅ Retiro exitoso. Saldo actual: $_saldo")
+                println("Retiro exitoso. Saldo actual: $_saldo")
             }
         }
     }

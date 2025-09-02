@@ -13,7 +13,7 @@ class Producto(private var _precio: Double, private var _descuento: Double) {
         // aqui se valida y establece el nuevo valor
         set(value) {
             // el precio no puede ser negativo
-            if (value >= 0) _precio = value else println("⚠️ El precio no puede ser negativo")
+            if (value >= 0) _precio = value else println(" El precio no puede ser negativo")
         }
 
     var descuento: Double
@@ -22,7 +22,7 @@ class Producto(private var _precio: Double, private var _descuento: Double) {
         // valida y establece el nuevo valor
         set(value) {
             // el descuento debe estar entre 0% y 100%
-            if (value in 0.0..100.0) _descuento = value else println("⚠️ El descuento debe estar entre 0 y 100")
+            if (value in 0.0..100.0) _descuento = value else println(" El descuento debe estar entre 0 y 100")
         }
 
     // Metodo para calcular el precio final después del descuento
@@ -35,7 +35,7 @@ fun main() {
     // precio 100.0 y descuento 15.0
     val prod = Producto(100.0, 15.0)
 
-    println("💲 Precio final: ${prod.calcularPrecioFinal()}")
+    println("Precio final: ${prod.calcularPrecioFinal()}")
 
     // Ejemplo de uso de los setters con validación
     prod.precio = -50.0  // Esto mostrará un mensaje de error
@@ -44,5 +44,5 @@ fun main() {
     // Valores válidos
     prod.precio = 200.0
     prod.descuento = 25.0
-    println("💲 Nuevo precio final: ${prod.calcularPrecioFinal()}")
+    println("Nuevo precio final: ${prod.calcularPrecioFinal()}")
 }

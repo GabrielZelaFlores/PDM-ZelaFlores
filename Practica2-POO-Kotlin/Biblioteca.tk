@@ -15,7 +15,7 @@ class Libro(
     val genero: String, val paginas: Int
 ) : Material(titulo, autor, anio) {
     override fun mostrarDetalles() {
-        println("📘 Libro: $titulo, Autor: $autor, Año: $anioPublicacion, Género: $genero, Páginas: $paginas")
+        println("Libro: $titulo, Autor: $autor, Año: $anioPublicacion, Género: $genero, Páginas: $paginas")
     }
 }
 
@@ -24,7 +24,7 @@ class Revista(
     val issn: String, val volumen: Int, val numero: Int, val editorial: String
 ) : Material(titulo, autor, anio) {
     override fun mostrarDetalles() {
-        println("📕 Revista: $titulo, Autor: $autor, Año: $anioPublicacion, ISSN: $issn, Volumen: $volumen, Número: $numero, Editorial: $editorial")
+        println("Revista: $titulo, Autor: $autor, Año: $anioPublicacion, ISSN: $issn, Volumen: $volumen, Número: $numero, Editorial: $editorial")
     }
 }
 
@@ -58,21 +58,21 @@ class Biblioteca : IBiblioteca {
     override fun prestar(usuario: Usuario, material: Material) {
         if (materialesDisponibles.remove(material)) {
             prestamos[usuario]?.add(material)
-            println("✅ Material prestado: ${material.titulo}")
-        } else println("⚠️ Material no disponible.")
+            println("Material prestado: ${material.titulo}")
+        } else println("Material no disponible.")
     }
 
     override fun devolver(usuario: Usuario, material: Material) {
         if (prestamos[usuario]?.remove(material) == true) {
             materialesDisponibles.add(material)
-            println("✅ Material devuelto: ${material.titulo}")
+            println("Material devuelto: ${material.titulo}")
         } else {
-            println("⚠️ El usuario no tenía este material en préstamo.")
+            println("El usuario no tenía este material en préstamo.")
         }
     }
 
     override fun mostrarMaterialesDisponibles() {
-        println("📚 Materiales disponibles:")
+        println("Materiales disponibles:")
     override fun mostrarMaterialesReservados(usuario: Usuario) {
 }
 
@@ -80,7 +80,7 @@ class Biblioteca : IBiblioteca {
 fun main() {
     val biblioteca = Biblioteca()
 
-    // 📘 Libros de autores arequipeños reales
+    // Libros de autores arequipeños reales
         1931,
         "Novela social",
         180
@@ -112,7 +112,6 @@ fun main() {
     biblioteca.devolver(usuario1, libro1)
     biblioteca.mostrarMaterialesDisponibles()
 }
-    // 👉 Estas líneas deben estar dentro del main
     biblioteca.registrarMaterial(libro1)
     biblioteca.registrarMaterial(libro2)
         "Historia de Arequipa",
@@ -121,7 +120,7 @@ fun main() {
     val libro1 = Libro(
         "El tungsteno",
         "César Vallejo",
-        println("📖 Materiales reservados por ${usuario.nombre}:")
+        println("Materiales reservados por ${usuario.nombre}:")
         prestamos[usuario]?.forEach { it.mostrarDetalles() }
     }
         if (materialesDisponibles.isEmpty()) println("No hay materiales disponibles.")

@@ -8,7 +8,7 @@ Este proyecto es una aplicación móvil en **Kotlin con Android Studio** que per
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está organizado siguiendo las buenas prácticas de Android:
 
@@ -30,13 +30,13 @@ proyecto/
 │   │   │   ├── AndroidManifest.xml            # Declaración de actividades
 ```
 
-✔️ Archivos organizados por carpetas (`java`, `layout`, `values`).
-✔️ Nombres descriptivos y consistentes.
-✔️ Fácil de navegar y comprender.
+Archivos organizados por carpetas (`java`, `layout`, `values`).
+Nombres descriptivos y consistentes.
+Fácil de navegar y comprender.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 * Formulario con campos: **Nombre, Edad, Ciudad, Correo electrónico**.
 * Validación básica de entradas (estructura clara y uso de tipos adecuados).
@@ -48,7 +48,7 @@ proyecto/
 
 ---
 
-## ✅ Convenciones de código
+## Convenciones de código
 
 * Variables y funciones en **camelCase**.
 * Clases en **UpperCamelCase**.
@@ -58,7 +58,7 @@ proyecto/
 
 ---
 
-## 💬 Comentarios en el código
+## Comentarios en el código
 
 * Todas las clases (`FormularioActivity`, `ResumenActivity`, `Usuario`) contienen comentarios en la cabecera con descripción, autor y fecha.
 * Se explica la lógica detrás de métodos y variables.
@@ -66,7 +66,7 @@ proyecto/
 
 ---
 
-## 🛠️ Requisitos
+## Requisitos
 
 * Android Studio **Giraffe o superior**.
 * SDK de Android 21+.
@@ -74,7 +74,7 @@ proyecto/
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 1. Clona el repositorio:
    `git clone https://github.com/GabrielZelaFlores/PDM-ZelaFlores.git`
@@ -85,7 +85,7 @@ proyecto/
 
 ---
 
-## 📌 Commits sugeridos (Git)
+## Commits sugeridos (Git)
 
 A lo largo del desarrollo se recomienda llevar un historial claro de cambios.
 Ejemplo de commits realizados:
@@ -103,13 +103,13 @@ Ejemplo de commits realizados:
 
 ---
 
-## 🔗 Enlace al repositorio
+## Enlace al repositorio
 
 [https://github.com/GabrielZelaFlores/PDM-ZelaFlores.git](https://github.com/GabrielZelaFlores/PDM-ZelaFlores.git)
 
 ---
 
-## 📊 Evaluación según rúbrica
+## Evaluación según rúbrica
 
 * **Estructura del proyecto (3/3):** Excelente. Archivos en carpetas correctas y nombres descriptivos.
 * **Convenciones de código (5/5):** Excelente. Uso consistente de camelCase, UpperCamelCase y reutilización de clases.
@@ -117,4 +117,4 @@ Ejemplo de commits realizados:
 * **Uso de Git y README (3/3):** Excelente. Commits frecuentes y descriptivos, README detallado con enlace a GitHub.
 * **Cumplimiento de requisitos funcionales (6/6):** Excelente. Funcionalidad completa, interfaz intuitiva, manejo de rotación, intents y paso de objetos.
 
-**Total: 20/20 ✅**
+**Total: 20/20 **

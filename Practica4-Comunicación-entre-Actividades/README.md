@@ -85,24 +85,6 @@ Fácil de navegar y comprender.
 
 ---
 
-## Commits sugeridos (Git)
-
-A lo largo del desarrollo se recomienda llevar un historial claro de cambios.
-Ejemplo de commits realizados:
-
-1. `git commit -m "Inicialización del proyecto Android con estructura básica"`
-2. `git commit -m "Creación del layout activity_main.xml con formulario"`
-3. `git commit -m "Creación del layout activity_resumen.xml con botones y TextView"`
-4. `git commit -m "Definición de recursos de texto en strings.xml"`
-5. `git commit -m "Implementación de FormularioActivity con captura de datos"`
-6. `git commit -m "Implementación de ResumenActivity con visualización de datos"`
-7. `git commit -m "Creación de clase Usuario serializable para transferencia entre actividades"`
-8. `git commit -m "Corrección de recursos y vinculación con R"`
-9. `git commit -m "Documentación del código y comentarios de diseño"`
-10. `git commit -m "Actualización del README.md con descripción del proyecto"`
-
----
-
 ## Enlace al repositorio
 
 [https://github.com/GabrielZelaFlores/PDM-ZelaFlores.git](https://github.com/GabrielZelaFlores/PDM-ZelaFlores.git)

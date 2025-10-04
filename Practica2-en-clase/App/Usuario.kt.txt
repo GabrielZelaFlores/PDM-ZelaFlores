@@ -1,0 +1,15 @@
+/*
+Tema: RecyclerView con Edición y Long Click
+Alumno: Gabriel Frank Krisna Zela Flores
+Fecha de inicio: 03/10/2025
+Fecha de finalización: 03/10/2025
+*/
+
+package com.example.recyclerviewapp
+
+data class Usuario(
+    var nombre: String,
+    var edad: Int,
+    var email: String,
+    var password: String
+)

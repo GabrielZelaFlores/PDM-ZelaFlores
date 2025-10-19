@@ -1,9 +1,9 @@
 /*
 Autor: Gabriel Frank Krisna Zela Flores
 Descripción: Este fragmento se encarga de mostrar la pantalla de resultados del juego,
-              donde aparece el puntaje final y el récord alcanzado. Además, añadi una animación
-              suave para que los textos se vean más atractivos y le da al jugador
-              la opción de volver a jugar o regresar al menú principal.
+donde aparece el puntaje final y el récord alcanzado. Además, añadi una animación
+suave para que los textos se vean más atractivos y le da al jugador
+la opción de volver a jugar o regresar al menú principal.
 Fecha creación: 17/10/2025
 Última modificación: 17/10/2025
 */
@@ -70,3 +70,4 @@ class ResultFragment : Fragment() {
         _binding = null
     }
 }
+

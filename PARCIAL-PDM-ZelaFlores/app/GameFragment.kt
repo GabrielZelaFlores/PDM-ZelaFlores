@@ -1,7 +1,7 @@
 /*
 Autor: Gabriel Frank Krisna Zela Flores
 Descripcion: Fragmento principal del juego. Muestra un color aleatorio, botones de colores para elegir,
-temporizador, puntaje en tiempo real, sonidos y animaciones suaves al acertar.
+temporizador, puntaje en tiempo real, sonidos y animaciones suaves.
 Fecha creación: 17/10/2025
 Última modificación: 17/10/2025
 */
@@ -130,3 +130,4 @@ class GameFragment : Fragment() {
         _binding = null
     }
 }
+
